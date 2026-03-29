@@ -1,9 +1,11 @@
-import { Text, View } from 'react-native';
-
+import { View } from "react-native";
+import Box from "./box";
+import styles from "./styles";
 export default function App() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text style={{ fontSize: 20 }}>Hello Snack!</Text>
-    </View>
-  );
+  return (
+    <View style={styles.container}>
+      <Box>#1</Box>
+      <Box>#2</Box>
+    </View>
+  );
 }

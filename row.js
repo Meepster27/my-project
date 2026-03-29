@@ -1,4 +1,4 @@
-import { PropTypes } from "prop-types";
+import PropTypes from "prop-types";
 import { Text, View } from "react-native";
 import styles from "./styles";
 export default function Box({ children }) {
