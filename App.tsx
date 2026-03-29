@@ -1,17 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
       <ScrollView contentContainerStyle={styles.content}>
-        <Image
-          source={require('./assets/images/react-logo.png')}
-          style={styles.logo}
-        />
-        <Text style={styles.title}>Welcome to My Project</Text>
+        <Text style={styles.title}>🎉 Welcome to My Project</Text>
         <Text style={styles.subtitle}>Built with React Native & Expo</Text>
         
         <View style={styles.section}>
@@ -26,6 +22,13 @@ export default function App() {
           <Text style={styles.text}>✓ Cross-platform compatibility</Text>
           <Text style={styles.text}>✓ Runs on web, iOS, and Android</Text>
           <Text style={styles.text}>✓ Hot reloading support</Text>
+        </View>
+
+        <View style={styles.section}>
+          <Text style={styles.heading}>Getting Started</Text>
+          <Text style={styles.text}>
+            Edit App.tsx and save to see changes instantly!
+          </Text>
         </View>
       </ScrollView>
     </View>
@@ -42,21 +45,18 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     paddingHorizontal: 16,
   },
-  logo: {
-    width: 100,
-    height: 100,
-    marginBottom: 20,
-  },
   title: {
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 8,
     color: '#333',
+    textAlign: 'center',
   },
   subtitle: {
     fontSize: 16,
     color: '#666',
     marginBottom: 24,
+    textAlign: 'center',
   },
   section: {
     width: '100%',
