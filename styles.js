@@ -1,14 +1,15 @@
-import { Platform, StatusBar, StyleSheet } from "react-native";
+import { Platform, StatusBar, StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: "row",
-    flexWrap: "wrap",
-    backgroundColor: "ghostwhite",
-    justifyContent: "center",
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    backgroundColor: 'ghostwhite',
+    justifyContent: 'center',
+    alignItems: 'center',
     ...Platform.select({
-      ios: { paddingTop: 40 },
+      ios: { paddingTop: 60 },
       android: { paddingTop: StatusBar.currentHeight },
     }),
   },
@@ -16,17 +17,17 @@ export default StyleSheet.create({
   box: {
     height: 100,
     width: 100,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "lightgray",
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'lightgray',
     borderWidth: 1,
-    borderStyle: "dashed",
-    borderColor: "darkslategray",
-    margin: 10,
+    borderStyle: 'dashed',
+    borderColor: 'darkslategray',
+    margin: 20,
   },
 
   boxText: {
-    color: "darkslategray",
-    fontWeight: "bold",
+    color: 'darkslategray',
+    fontWeight: 'bold',
   },
 });
