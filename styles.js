@@ -6,7 +6,7 @@ export default StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     backgroundColor: "ghostwhite",
-    alignItems: "center",
+    justifyContent: "center",
     ...Platform.select({
       ios: { paddingTop: 40 },
       android: { paddingTop: StatusBar.currentHeight },
